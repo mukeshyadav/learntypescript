@@ -5,7 +5,7 @@ const myVehicle: Vehicle = new Vehicle(4, 200);
 myVehicle.accelerate(20);
 console.log(myVehicle.speed);
 
-//nmumber
+//number
 let varNum: number = 1;
 
 // string

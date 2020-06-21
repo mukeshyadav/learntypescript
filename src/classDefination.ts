@@ -1,3 +1,12 @@
+/**
+ * TypeScript: Class Definition
+ * @namespace Vehicle
+ * @constructor
+ * @param {number} wheels - Number of wheels.
+ * @paran {number} power - Power of the vehicle.
+ * @param {number} speed - Speed of the vehicle.
+ */
+
 class Vehicle {
   wheels: number;
   power: number;
