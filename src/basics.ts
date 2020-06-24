@@ -3,19 +3,19 @@
  * its supports decimal, hexadecimal, octal and binary literal
  * @type {number}
  */
-let varNum: number = 1;
+export let varNum: number = 1;
 
 /**
  * Typescript, follows the same syntax as Javascript
  * @type {string}
  */
-let varString: string = "Mukesh";
+export let varString: string = "Mukesh";
 
 /**
  * Boolean values function just like they do in Javascript
  * @type {boolean}
  */
-let varTrue: boolean = true;
+export let varTrue: boolean = true;
 
 /**
  * In Typescript, arrays are a collection of same object
@@ -25,17 +25,29 @@ let varTrue: boolean = true;
  * create multidimensional array to save one into another using []
  * @type {Array.<number>}
  */
-let varArray: Array<number> = [1, 2, 3];
-let varArrayMix: (Date | string[])[] = [new Date(), new Date(), ["1", "abc"]];
+export let varArray: Array<number> = [1, 2, 3];
+export let varArrayMix: (Date | string[])[] = [
+  new Date(),
+  new Date(),
+  ["1", "abc"]
+];
 
 /**
  * In Typescript, Tuple are like arrays, but there we can define type of data at each index
  * @type {tuple}
  */
 
-let varNumberTuple: [number, number, number] = [1, 2, 3];
+export let varNumberTuple: [number, number, number] = [1, 2, 3];
 
 /**
  * Void, is subtype of undefine. It is return type that is substituted with different types
  * when needed.
  */
+
+/**
+ * Function, in Typescript declare same way as javascript, with type annotation
+ * @param {string} [person] - someone name
+ */
+export function funcGreet(person: string) {
+  return `Hellow, ${person}`;
+}
