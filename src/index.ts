@@ -9,6 +9,8 @@ import {
   funcGreet
 } from "./basics";
 
+import { User, UserAccount } from "./interface";
+
 const myVehicle: Vehicle = new Vehicle(4, 200);
 myVehicle.accelerate(20);
 
@@ -23,3 +25,13 @@ varNumberTuple;
 varTrue;
 
 funcGreet("Mukesh");
+/**
+ * Interface
+ */
+
+export const user: User = {
+  name: "Mukesh",
+  id: 1
+};
+
+const myUser: User = new UserAccount("Lokesh", 123);
